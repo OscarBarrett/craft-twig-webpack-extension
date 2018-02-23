@@ -28,7 +28,7 @@ class Settings extends Model
     /**
      * @var string
      */
-    public $outputDir = 'resources';
+    public $outputDir = '/resources';
 
     /**
      * @var string
