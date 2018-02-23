@@ -1,0 +1,44 @@
+{
+    "name": "OscarBarrett/craft-twig-webpack-extension",
+    "description": "A plugin that provides https://github.com/fullpipe/twig-webpack-extension",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "twig-webpack-extension",
+        "twig",
+        "webpack",
+        "manifest"
+    ],
+    "support": {
+        "docs": "https://github.com/OscarBarrett/craft-twig-webpack-extension/blob/master/README.md",
+        "issues": "https://github.com/OscarBarrett/craft-twig-webpack-extension/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Barrett",
+            "homepage": "https://github.com/OscarBarrett"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "fullpipe/twig-webpack-extension": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "OscarBarrett\\CraftTwigWebpackExtension\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Twig Webpack Extension",
+        "handle": "twig-webpack-extension",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/OscarBarrett/craft-twig-webpack-extension/master/CHANGELOG.md",
+        "class": "OscarBarrett\\CraftTwigWebpackExtension\\TwigWebpackExtension"
+    }
+}
