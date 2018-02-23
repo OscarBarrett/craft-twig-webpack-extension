@@ -1,5 +1,5 @@
 {
-    "name": "OscarBarrett/craft-twig-webpack-extension",
+    "name": "oscarbarrett/craft-twig-webpack-extension",
     "description": "A plugin that provides https://github.com/fullpipe/twig-webpack-extension",
     "type": "craft-plugin",
     "version": "1.0.0",
