@@ -1,28 +1,26 @@
-# Twig Webpack Extension plugin for Craft CMS 3.x
+# Twig Webpack Extension plugin for Craft CMS 2.x
 
 A plugin that provides https://github.com/fullpipe/twig-webpack-extension
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+The Craft 2 version has only been tested with Craft 2.6.
 
 ## Installation
 
 To install the plugin, follow these instructions.
 
-1. Open your terminal and go to your Craft project:
+1. Download the latest release for Craft 2 from here:
 
-        cd /path/to/project
+        https://github.com/OscarBarrett/craft-twig-webpack-extension/releases/tag/craft-2
 
-2. Then tell Composer to load the plugin:
-
-        composer require OscarBarrett/craft-twig-webpack-extension
+2. Unzip the folder and rename it to `twigwebpackextension`. Then move it to your `craft/plugins` directory.
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Twig Webpack Extension.
 
 ## Configuration
 
-Create a file at `craft/config/twig-webpack-extension.php`.
+Create a file at `craft/config/twigwebpackextension.php`.
 
 If your assets and manifest are in the same directory, simply set `outputDir`:
 

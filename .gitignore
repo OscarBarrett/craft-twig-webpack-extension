@@ -3,9 +3,6 @@
 .env.sh
 .env
 
-# COMPOSER
-/vendor
-
 # BUILD FILES
 /bower_components/*
 /node_modules/*
