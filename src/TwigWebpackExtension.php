@@ -68,7 +68,7 @@ class TwigWebpackExtension extends Plugin
         } else {
             $manifestPath = CRAFT_BASE_PATH . "/web/{$settings->manifestPath}";
             Craft::$app->view->registerTwigExtension(
-                new WebpackExtension($manifestPath, $settings->jsOutputDir, $settings->cssOutputDir)
+                new WebpackExtension($manifestPath, $settings->jsPath, $settings->cssPath)
             );
         }
     }
