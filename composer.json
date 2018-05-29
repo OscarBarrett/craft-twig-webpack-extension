@@ -2,7 +2,7 @@
     "name": "oscarbarrett/craft-twig-webpack-extension",
     "description": "A plugin that provides https://github.com/fullpipe/twig-webpack-extension",
     "type": "craft-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": [
         "craft",
         "cms",
