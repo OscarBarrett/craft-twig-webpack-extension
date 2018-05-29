@@ -59,7 +59,7 @@ class TwigWebpackExtension extends Plugin
             throw new InvalidConfigException('Twig Webpack Extension plugin has invalid settings');
         }
 
-        $webroot = $_SERVER['DOCUMENT_ROOT'];
+        $webroot = Craft::getAlias('@webroot');
 
         if ($settings->outputDir) {
             $manifestPath = "{$webroot}/{$settings->outputDir}/manifest.json";
