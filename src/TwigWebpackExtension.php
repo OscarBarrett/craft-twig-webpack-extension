@@ -59,14 +59,16 @@ class TwigWebpackExtension extends Plugin
             throw new InvalidConfigException('Twig Webpack Extension plugin has invalid settings');
         }
 
+        $webroot = Craft::getAlias('@webroot');
+
         if ($settings->outputDir) {
-            $manifestPath = CRAFT_BASE_PATH . "/web/{$settings->outputDir}/manifest.json";
+            $manifestPath = "{$webroot}/{$settings->outputDir}/manifest.json";
             $outputPath = "{$settings->outputDir}/";
             Craft::$app->view->registerTwigExtension(
                 new WebpackExtension($manifestPath, $outputPath, $outputPath)
             );
         } else {
-            $manifestPath = CRAFT_BASE_PATH . "/web/{$settings->manifestPath}";
+            $manifestPath = "${webroot}/{$settings->manifestPath}";
             Craft::$app->view->registerTwigExtension(
                 new WebpackExtension($manifestPath, $settings->jsPath, $settings->cssPath)
             );
